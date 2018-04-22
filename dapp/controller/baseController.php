@@ -10,6 +10,7 @@
             $this->model[ $key ] = $val;
         }
 
+        // ASAGIDAKI METHODLARI SILMEYIN!!!
         protected function addToInfo($message) {
             $info = $_SESSION['_danyInfo'];
             $info[] = $message;

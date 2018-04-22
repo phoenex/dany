@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <route>
 	<map>
-		<item name="notFound/*" controller="system" httpMethod="GET" method="notFound" granted="" roles=""/>
-		<item name="error/*" controller="system" httpMethod="GET" method="error" granted="" roles=""/>
-		<item name="notAuthorized/*" controller="system" httpMethod="GET" method="notAuthorized" granted="" roles=""/>
 		<!-- uygulama urlleri basliyor -->
 
 		<!-- kok dizin (domain/ana sayfa) tanimlamasi -->

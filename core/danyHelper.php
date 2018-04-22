@@ -17,10 +17,6 @@
 		return true;
     }
 
-    function _endDany() {
-        
-    }
-
     function _getDoc($objectName) {
         global $doc;
         return $doc->get($objectName);
