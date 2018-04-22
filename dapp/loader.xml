@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loader>
+	<!-- object container -->
+	<doc>
+		<!-- bu veranda icin gerekli -->
+		<item path="dapp/config.php" name="config" object="Config" />
+		<item path="core/urlResolver.php" name="resolver" object="UrlResolver" />
+		<item path="core/controller.php" name="controller" object="Controller" />
+		<item path="lib/di18n/di18n.php" name="translate" object="Di18n" />
+	</doc>
+</loader>

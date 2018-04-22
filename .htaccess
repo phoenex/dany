@@ -1,0 +1,12 @@
+<Files "*.xml">
+    Order deny,allow
+    Deny From All
+</Files>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$  index.php?dany=$1 [L,QSA]
+</IfModule>
+
