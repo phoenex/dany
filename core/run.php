@@ -29,6 +29,12 @@
         $view= "system/error";
     } else {
         $view = $controller->view;
+        if(!file_exists("view/" . $view . ".php")) {
+            $controller->hasError = true;
+            $controller->errorCode = 500;
+            $controller->errorMessage = "view file does not exists! : view/" . $view . ".php";
+            $view= "system/error";
+        }
     }
     unset($controller);
     unset($doc);

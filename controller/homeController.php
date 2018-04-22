@@ -2,11 +2,13 @@
     class HomeController extends BaseController {
         
         public function welcome() {
-            $this->addToModel("isim", "dany");
+            $this->addToModel("message", "Deneyseldir, çokta şeyetmeyin yani :)");
             return "home";
         }
 
         public function version() {
+            $depTest = _getDoc("depTest");
+            echo $depTest->getParam();
             $this->addToModel("versionNum", "1.0");
             $this->addToModel("versionLabel", "otizm");
             return "version";
