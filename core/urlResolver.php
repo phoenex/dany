@@ -1,4 +1,5 @@
 <?php
+    namespace core;
     class UrlResolver {
 
         public $map;
@@ -11,16 +12,16 @@
         public $requestHttpMethod;
         public $controllerObject;
         private $controllerFullPath;
-        private $mappedUrl;
+        public $mappedUrl;
 
-        public function UrlResolver() {
+        public function __construct() {
             $this->requestHttpMethod = $_SERVER['REQUEST_METHOD'];
             $this->requestedUrl = ($_GET['dany'] != null) ? $_GET['dany'] : '.' ;
             $this->resolveUrl();
         }
 
         public function resolveUrl() {
-            $configuration = simplexml_load_file("dapp/route.xml");
+            $configuration = simplexml_load_file("config/route.xml");
             $entries = $configuration->map->item;
             foreach($entries as $e) {
                 $mappedUrl = (String) $e->attributes()->name;

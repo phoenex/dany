@@ -1,4 +1,6 @@
 <?php 
+    namespace core;
+
     class Controller {
 
         private $file;
@@ -35,15 +37,16 @@
                     $this->errorMessage = "Controller object or controller method not found! : " . $this->object . " - " . $this->method;
                 } else {
                     $this->controllerObject = new $objectName();
-                    $this->view = call_user_func_array(array($this->controllerObject, $methodName), $this->getParams());
+                    $this->view = call_user_func_array(array($this->controllerObject, $methodName), $this->getParams($resolver));
                 }
                 $this->_setVarsToGlobal();
             }
         }
 
-        private function getParams() {
-            $name = str_replace("*", "", $this->mappedUrl);
-			$url = str_replace($name,"",$_GET['v']);
+        private function getParams($resolver) {
+            $name = str_replace("*", "", $resolver->mappedUrl);
+            $url = str_replace($name,"",$_GET['dany']);
+            echo $this->mappedUrl;
 			return explode("/", $url);			
         }
         

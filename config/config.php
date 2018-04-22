@@ -1,15 +1,14 @@
 <?php
+    namespace config;
     class Config {
         private $servers;
         private $mode;
         public $dbConfig;
         public $projectUrl;
-        public $viewPath;
         public $controllerScanPath;
 
-        public function Config() {
-            $this->controllerScanPath = "dapp/controller";
-            $this->viewPath = "dapp/view";
+        public function __construct() {
+            $this->controllerScanPath = "controller";
             $this->servers = array("http://localhost/dany/", "http://" . $_SERVER['HTTP_HOST'] . "/");
             $this->mode = array("dev", "prod");
         }

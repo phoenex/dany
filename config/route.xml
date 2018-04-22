@@ -2,7 +2,8 @@
 <route>
 	<map>
 		<!-- uygulama urlleri basliyor -->
-
+		<item name="version.html" controller="home" httpMethod="get" method="version" granted="any" roles="ROLE_BASIC"/>
+		<item name="parametreOrnek/*" controller="home" httpMethod="get" method="paramSample" granted="any" roles="ROLE_BASIC"/>
 		<!-- kok dizin (domain/ana sayfa) tanimlamasi -->
 		<item name="." controller="home" httpMethod="get" method="welcome" granted="" roles=""/>
 	</map>
