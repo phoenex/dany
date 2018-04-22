@@ -5,6 +5,8 @@
     include("core/doc.php");
     $doc = new Doc();
     $config = $doc->get("config");
+    define("DANY_ENV", $config->getEnvironment());
+
     $resolver = $doc->get("resolver");
     $controller = $doc->get("controller");
     $controller->process( $resolver, $config->controllerScanPath );
