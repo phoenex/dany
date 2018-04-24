@@ -64,6 +64,10 @@
 				$GLOBALS["_errorList"] = $_SESSION['_vErrorList'];
 				unset($this->_model);
 			}
-		}
+        }
+        
+        public function getLayout() {
+            return $this->controllerObject->getLayout();
+        }
     }
 ?>

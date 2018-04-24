@@ -36,8 +36,10 @@
             $view= "system/error";
         }
     }
+    $danyLayout = $controller->getLayout();
     unset($controller);
     unset($doc);
+
     $danyView = "view/" . $view . ".php";
-    include("view/layout/mainLayout.php");
+    include("view/layout/" . $danyLayout . ".php");
 ?>

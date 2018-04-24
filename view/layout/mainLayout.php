@@ -16,6 +16,7 @@
 	<title>Dany PHP</title>
 	<meta name="description" content="Dany PHP" />
 	<base href="<?php echo PROJECT_URL; ?>"/>
+	<link href="view/assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 
