@@ -5,6 +5,7 @@
 		<!-- bu dany icin gerekli -->
 		<item path="config/config.php" name="config" object="Config" namespace="config"/>
 		<item path="core/urlResolver.php" name="resolver" object="UrlResolver" namespace="core"/>
+		<item path="core/danyUser.php" name="danyUser" object="DanyUser"/>
 		<item path="core/controller.php" name="controller" object="Controller" namespace="core"/>
 
 		<item path="lib/depTest.php" name="depTest" object="DepTest" dependency="depTestMain"/>

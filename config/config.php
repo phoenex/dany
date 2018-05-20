@@ -1,5 +1,8 @@
 <?php
     namespace config;
+
+    define("DANY_USER_VAR", "_my_dany_user_");
+
     class Config {
         private $servers;
         private $mode;

@@ -21,4 +21,14 @@
         global $doc;
         return $doc->get($objectName);
     }
+
+    function setDanyUser(DanyUser $user) {
+        if($user != null) {
+            $_SESSION[ DANY_USER_VAR ] = serialize($user);
+        }
+    }
+
+    function getDanyUser() {
+        return unserialize($_SESSION[ DANY_USER_VAR ]);
+    }
 ?>
