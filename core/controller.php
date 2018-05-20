@@ -25,6 +25,10 @@
                 $this->hasError = true;
                 $this->errorCode = 500;
                 $this->errorMessage = "Controller file not found!";
+            } else if(!$this->hasPermission($resolver)) {
+                $this->hasError = true;
+                $this->errorCode = 401;
+                $this->errorMessage = "Not authorized!";
             } else {
                 include($controllerScanPath . "/baseController.php");
                 include($this->file);
@@ -40,6 +44,35 @@
                     $this->view = call_user_func_array(array($this->controllerObject, $methodName), $this->getParams($resolver));
                 }
                 $this->_setVarsToGlobal();
+            }
+        }
+
+        private function hasPermission(UrlResolver $resolver) {
+
+            // url bir rolle korunmuyorsa yetki var
+            if(empty($resolver->roles)) {
+                return true;
+            }
+
+            $user = getDanyUser();
+            if($user == null) return false;
+
+            // url rolle korunuyorsa kullanicinin yetkisi var mi bak
+            $roles = explode(",", $resolver->roles);
+            if($resolver->granted == "any") {
+                foreach ($roles as $role) {
+                    if($user->hasRole($role)) {
+                        return true;
+                    }
+                }
+                return false;
+            } else {
+                foreach ($roles as $role) {
+                    if(!$user->hasRole($role)) {
+                        return false;
+                    }
+                }
+                return true;
             }
         }
 
