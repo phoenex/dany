@@ -9,9 +9,6 @@
     $doc = new Doc();
     
     $resolver = $doc->get("resolver");
-    // controllerdan onceki son cikis :)
-    // url kaydi belli artik, sayfa koruma yapilacaksa burada
-    // araya girilebilir.
 
     // config onemli :)
     $config = $doc->get("config");
@@ -42,4 +39,17 @@
 
     $danyView = "view/" . $view . ".php";
     include("view/layout/" . $danyLayout . ".php");
+
+    /*
+    ⠀⢠⡤⢺⣿⣿⣿⣿⣿⣶⣄
+    ⠀⠀⠉⠀⠘⠛⠉⣽⣿⣿⣿⣿⡇
+    ⠀⠀⠀⠀⠀⠀⠀⢉⣿⣿⣿⣿⡗
+    ⠀⢀⣀⡀⢀⣀⣤⣤⣽⣿⣼⣿⢇⡄
+    ⠀⠀⠙⠗⢸⣿⠁⠈⠋⢨⣏⡉⣳
+    ⠀⠀⠀⠀⢸⣿⡄⢠⣴⣿⣿⣿
+    ⠀⠀⠀⠀⠉⣻⣿⣿⣿⣿⣿⡟⡀
+    ⠀⠀⠀⠀⠐⠘⣿⣶⡿⠟⠁⣴⣿⣄
+    ⠀⠀⠀⠀⠀⠘⠛⠉⣠⣴⣾⣿⣿⣿⡦
+    ⠀⠀⣴⣠⣄⠸⠿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    */
 ?>
