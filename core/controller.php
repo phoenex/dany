@@ -53,13 +53,16 @@
             if(empty($resolver->roles)) {
                 return true;
             }
-
+            // Bu noktada anliyoruz ki url bir rolle korunuyor, bunun icin bize
+            // bir user gerek, eger user null ise yetkisizdir
             $user = getDanyUser();
             if($user == null) return false;
 
-            // url rolle korunuyorsa kullanicinin yetkisi var mi bak
+            // url rolle korunuyor ve user null degil. Oyle ise
+            // kullanicinin yetkisi var mi bakalim
             $roles = explode(",", $resolver->roles);
             if($resolver->granted == "any") {
+                // user belirtilen rollerden herhangibirine sahip olsa yeter
                 foreach ($roles as $role) {
                     if($user->hasRole($role)) {
                         return true;
@@ -67,6 +70,7 @@
                 }
                 return false;
             } else {
+                // user belirtilen rollerin tamamina sahip olmak zorunda
                 foreach ($roles as $role) {
                     if(!$user->hasRole($role)) {
                         return false;
@@ -85,7 +89,7 @@
         
         private function _setVarsToGlobal() {
             // model verileri global erişime set ediliyor
-            $_model = $this->controllerObject->getModel();
+            $_model = getModel();
 			if($_model != null) {
 				$keyArray = array_keys($_model);
 				for($a = 0; $a < count($keyArray); $a++) {
@@ -98,9 +102,6 @@
 				unset($this->_model);
 			}
         }
-        
-        public function getLayout() {
-            return $this->controllerObject->getLayout();
-        }
+
     }
 ?>

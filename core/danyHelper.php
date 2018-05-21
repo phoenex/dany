@@ -1,4 +1,29 @@
 <?php
+    // buna dokunmuyoruz :P
+    $_model = null;
+    $_layout = "mainLayout";
+
+    function getModel() {
+        global $_model;
+        return $_model;
+    }
+
+    function addToModel($key, $val) {
+        global $_model;
+        $_model[ $key ] = $val;
+    }
+
+    function setLayout($layout){
+        if(file_exists("view/layout/" . $layout . ".php")) {
+            global $_layout;
+            $_layout = $layout;
+        }
+    }
+
+    function getLayout() {
+        global $_layout;
+        return $_layout;
+    }
 
     function _isEqual($val1, $val2) {
         if(trim($val1) == trim($val2)) { return true; }
@@ -30,5 +55,27 @@
 
     function getDanyUser() {
         return unserialize($_SESSION[ DANY_USER_VAR ]);
+    }
+
+    function addToInfo($message) {
+        $info = $_SESSION['_danyInfo'];
+        $info[] = $message;
+        $_SESSION['_danyInfo'] = $info;
+    }
+
+    function addToError($message) {
+        $error = $_SESSION['_danyError'];
+        $error[] = $message;
+        $_SESSION['_danyError'] = $error;
+    }
+
+    function getErrors($seperator = null) {
+        if($seperator == null) return $_SESSION['_danyError'];
+        return implode($seperator, $_SESSION['_danyError']);
+    }
+
+    function getInfos($seperator = null) {
+        if($seperator == null) return $_SESSION['_danyInfo'];
+        return implode($seperator, $_SESSION['_danyInfo']);
     }
 ?>

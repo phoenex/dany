@@ -12,7 +12,7 @@
 
         public function __construct() {
             $this->controllerScanPath = "controller";
-            $this->servers = array("http://localhost/dany/dany/", "http://" . $_SERVER['HTTP_HOST'] . "/");
+            $this->servers = array("http://localhost/dany/", "http://" . $_SERVER['HTTP_HOST'] . "/");
             $this->mode = array("dev", "prod");
         }
 

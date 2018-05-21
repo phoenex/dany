@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba30b7c7-e149-4865-b69e-981ec3dd8fc9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/core/danyUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/loader.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/loader.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/route.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/route.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/baseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/baseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/homeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/homeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/danyHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/danyHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../danylib/danySecure/danyUser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/run.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/run.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,39 +19,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="loader.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/loader.xml">
+      <file leaf-file-name="dfile.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../danylib/dfile/dfile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="danyUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/danyUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
+            <state relative-caret-position="-1407" />
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getLayout</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../danylib" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../danylib/DanySecure/danyUser.php" />
-        <option value="$PROJECT_DIR$/core/controller.php" />
         <option value="$PROJECT_DIR$/../danylib/danySecure/danyUser.php" />
-        <option value="$PROJECT_DIR$/core/danyHelper.php" />
         <option value="$PROJECT_DIR$/core/danyUser.php" />
-        <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/config/loader.xml" />
+        <option value="$PROJECT_DIR$/config/config.php" />
+        <option value="$PROJECT_DIR$/controller/baseController.php" />
+        <option value="$PROJECT_DIR$/core/danyHelper.php" />
+        <option value="$PROJECT_DIR$/core/run.php" />
+        <option value="$PROJECT_DIR$/core/controller.php" />
+        <option value="$PROJECT_DIR$/config/route.xml" />
+        <option value="$PROJECT_DIR$/controller/homeController.php" />
       </list>
     </option>
   </component>
@@ -78,21 +78,12 @@
           <expand>
             <path>
               <item name="dany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dany" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dany" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dany" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="danylib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dany" type="b2602c69:ProjectViewProjectNode" />
               <item name="danylib" type="462c0819:PsiDirectoryNode" />
+              <item name="dfile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -104,6 +95,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -128,16 +124,15 @@
       <option name="presentableId" value="Default" />
       <updated>1526844993943</updated>
       <workItem from="1526844996614" duration="219000" />
-      <workItem from="1526846534136" duration="1868000" />
+      <workItem from="1526846534136" duration="3897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2087000" />
+    <option name="totallyTimeSpent" value="4116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1875" height="1057" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13493334" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -197,37 +192,13 @@
     <entry file="file://$PROJECT_DIR$/lib/depTestMain.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/depTest.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/depTestMain.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../danylib/libs.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-564">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/run.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="2" lean-forward="true" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -245,20 +216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/danyHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/danyUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -271,6 +228,73 @@
         <state relative-caret-position="105">
           <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/danyHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/baseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/home.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/run.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/depTestMain.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/route.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="107" selection-start-line="4" selection-start-column="107" selection-end-line="4" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/homeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../danylib/dfile/dfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1407" />
       </provider>
     </entry>
   </component>

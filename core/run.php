@@ -36,7 +36,7 @@
             $view= "system/error";
         }
     }
-    $danyLayout = $controller->getLayout();
+    $danyLayout = getLayout();
     unset($controller);
     unset($doc);
 
