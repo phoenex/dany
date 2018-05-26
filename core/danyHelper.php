@@ -78,4 +78,17 @@
         if($seperator == null) return $_SESSION['_danyInfo'];
         return implode($seperator, $_SESSION['_danyInfo']);
     }
+
+    function getPrettyUrl($val) {
+    	$dizi = array("ı" => "i", "ü" => "u", "ş" => "s", "ç" => "c", 
+    					"ö" => "o", "ğ" => "g", "İ" => "I", "Ü" => "U", 
+    					"Ş" => "S", "Ç" => "C", "Ö" => "O", "Ğ" => "G", " " => "-");
+    	$val = strtr($val, $dizi);
+    	return preg_replace('#[^A-Za-z0-9_-]#','',strtolower($val));
+    }
+
+    function redirectView($url) {
+        header("location:" . $url);
+        exit;
+    }
 ?>
