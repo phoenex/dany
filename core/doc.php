@@ -59,9 +59,9 @@
                     if(_hasText($item->dependency)) {
                         $dependencyList = $this->getDependenctItemList($item->dependency);
                         if($dependencyList != null) {
-                            foreach($dependencyList as $item) {
-                                if(file_exists($item->path)) {
-                                    require_once($item->path);
+                            foreach($dependencyList as $depItem) {
+                                if(file_exists($depItem->path)) {
+                                    require_once($depItem->path);
                                 }
                             }
                         }

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/dany.iml" filepath="$PROJECT_DIR$/.idea/dany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../danyPhp/.idea/danyPhp.iml" filepath="$PROJECT_DIR$/../danyPhp/.idea/danyPhp.iml" />
       <module fileurl="file://$PROJECT_DIR$/../danylib/.idea/danylib.iml" filepath="$PROJECT_DIR$/../danylib/.idea/danylib.iml" />
     </modules>
   </component>
